@@ -1,8 +1,14 @@
 // React import removed; not needed for JSX in Vite/TSX
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { Button } from 'components';
 
 function Home() {
-  return <h1>Home Page</h1>;
+  return (
+    <>
+      <h1>Home Page</h1>
+      <Button>Shared UI Button</Button>
+    </>
+  );
 }
 
 function About() {

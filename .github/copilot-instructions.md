@@ -8,6 +8,7 @@ Use this file to specify best practices, coding standards, and preferences for t
 - Use ES6+ syntax for all JavaScript/TypeScript code
 - Prefer functional components in Vite
 - Use async/await for asynchronous code
+- All react components should be created in the ui package and should include both unit tests and interation tests that satisfies coverage requirements.
 
 ### Folder Structure
 - Organize code by feature, not by type
@@ -15,7 +16,7 @@ Use this file to specify best practices, coding standards, and preferences for t
 - Try to keep package sizes to a minimum prioritizing separate packages for unrelated functionality.
 
 ### Libraries & Tools
-- Use Yarn as the package manager
+- Use Bun as the package manager
 - Use Express for backend APIs
 - Use Vite for frontend
 - Use Prettier and ESLint for code formatting and linting

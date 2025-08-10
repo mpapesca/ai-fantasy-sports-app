@@ -1,0 +1,27 @@
+{
+  "type": "module",
+  "name": "components",
+  "version": "1.0.0",
+  "packageManager": "bun@1.2.20",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "bun run storybook dev -p 6006",
+    "dev:watch": "bun vite build --watch",
+    "build": "bun run vite build && bun run tsc",
+    "lint": "bun run eslint .",
+    "test": "bun run vitest --coverage"
+  },
+  "dependencies": {
+    "@storybook/testing-library": "^0.2.2"
+  },
+  "devDependencies": {
+    "@storybook/react": "^9.1.1",
+    "@storybook/react-vite": "^9.1.1",
+    "@testing-library/react": "^16.3.0",
+    "@types/storybook__react": "^5.2.1",
+    "@vitejs/plugin-react": "^5.0.0",
+    "storybook": "^9.1.1"
+  }
+}

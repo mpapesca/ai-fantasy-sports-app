@@ -2,7 +2,9 @@
   "name": "ai-fantasy-sports-app",
   "version": "1.0.0",
   "private": true,
+  "packageManager": "bun@1.2.20",
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.4",
     "@types/node": "^24.2.1",
     "@vitest/coverage-v8": "^3.2.4",
     "eslint": "^9.33.0",
@@ -14,13 +16,20 @@
     "vitest": "^3.2.4"
   },
   "workspaces": [
-    "apps/*",
-    "packages/*"
+    "apps/backend",
+    "apps/frontend",
+    "apps/components",
+    "packages/api-football-client"
   ],
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
     "lint": "turbo run lint",
     "test": "turbo run test"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^7.3.1"
   }
 }

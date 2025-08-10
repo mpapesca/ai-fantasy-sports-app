@@ -3,17 +3,18 @@
   "version": "0.1.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "packageManager": "bun@1.2.20",
   "scripts": {
-    "build": "tsc",
-    "lint": "eslint src --ext .ts,.tsx",
-    "test": "vitest"
+    "dev": "bun run tsc --watch",
+    "build": "bun run tsc",
+    "lint": "bun run eslint .",
+    "test": "bun run vitest --coverage"
   },
   "dependencies": {
     "axios": "^1.6.0"
   },
   "devDependencies": {
-    "eslint": "^8.0.0",
-    "typescript": "^5.0.0",
-    "vitest": "^1.0.0"
+    "vitest": "^3.2.4",
+    "@vitest/coverage-v8": "^3.2.4"
   }
 }
