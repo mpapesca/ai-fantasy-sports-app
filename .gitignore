@@ -1,0 +1,51 @@
+# Yarn
+# See https://yarnpkg.com/advanced/qa#which-files-should-be-gitignored
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+# Yarn v1
+.yarn-error.log
+
+# Yarn v2+ (Berry)
+.yarnrc.yml
+
+# Node
+node_modules/
+
+# Build output
+dist/
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Turbo
+.turbo/
+
+# Coverage
+coverage/
+
+# Env
+.env*
+
+# Misc
+*.swp
+*.swo
+
+# Monorepo
+apps/*/node_modules/
+apps/*/dist/
+apps/*/coverage/
+packages/*/node_modules/
+packages/*/dist/
+packages/*/coverage/
