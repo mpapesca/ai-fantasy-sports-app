@@ -27,6 +27,7 @@ Use this file to specify best practices, coding standards, and preferences for t
 - Make sure tests are up to date with any new changes. This includes adding new tests and updating existing tests.
 
 ### Other Preferences
+- Use powershell on windows and terminal on macOS/Linux when running scripts.
 - Write clear, concise comments
 - Prefer TypeScript if possible
 - Avoid unnecessary dependencies

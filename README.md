@@ -10,12 +10,12 @@ This monorepo contains:
 
 ## Getting Started
 
-This project uses Yarn workspaces and Turborepo for monorepo management. The instructions below cover setup for **Linux**, **macOS**, and **Windows**.
+This project uses Bun and Turborepo for monorepo management. The instructions below cover setup for **Linux**, **macOS**, and **Windows**.
 
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) (v18+ recommended)
-- [Yarn](https://classic.yarnpkg.com/en/docs/install/)
+- [Bun](https://bun.sh/docs/installation)
 - [Git](https://git-scm.com/)
 
 ### Clone the Repository
@@ -27,18 +27,10 @@ cd ai-fantasy-sports-app
 
 ### Install Dependencies
 
-#### Linux & macOS
+#### All Platforms (Linux, macOS, Windows)
 
 ```sh
-yarn install
-```
-
-#### Windows
-
-Open **PowerShell** or **Command Prompt** and run:
-
-```sh
-yarn install
+bun install
 ```
 
 ### Start the Development Servers
@@ -48,7 +40,7 @@ Use the monorepo scripts for starting frontend and backend:
 #### All Platforms (Linux, macOS, Windows)
 
 ```sh
-yarn dev
+bun run dev
 ```
 
 This command will start all apps and packages in development mode using Turborepo.
@@ -56,7 +48,7 @@ This command will start all apps and packages in development mode using Turborep
 ### Running Tests
 
 ```sh
-yarn test
+bun run test
 ```
 
 ### Additional Commands
