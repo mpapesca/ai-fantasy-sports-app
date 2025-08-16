@@ -2,6 +2,8 @@ import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
   test: {
+    setupFiles: ['setupTests.ts'],
+    exclude: ['node_modules', '**/*.config.ts', 'setupTests.ts'],
     coverage: {
       reporter: ['text', 'json', 'html'],
       thresholds: {
@@ -10,8 +12,8 @@ export default defineConfig({
         branches: 90,
         statements: 90,
       },
-      exclude: ['src/main.ts', 'src/index.ts', 'vitest.config.ts', 'dist/**', '**/types.ts'],
+      include: ['src'],
+      exclude: ['**/types.ts'],
     },
-    setupFiles: ['setupTests.ts'],
   },
 });
