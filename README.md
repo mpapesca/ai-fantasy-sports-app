@@ -2,11 +2,7 @@
 
 This monorepo contains:
 
-
 ## Getting Started
-
-
-
 
 ## Getting Started
 
@@ -53,25 +49,25 @@ bun run test
 
 ### Additional Commands
 
-- **Build all packages/apps:**  
-	```sh
-	yarn build
-	```
-- **Lint all code:**  
-	```sh
-	yarn lint
-	```
-- **Format code:**  
-	```sh
-	yarn format
-	```
+- **Build all packages/apps:**
+  ```sh
+  yarn build
+  ```
+- **Lint all code:**
+  ```sh
+  yarn lint
+  ```
+- **Format code:**
+  ```sh
+  yarn format
+  ```
 
 ### Notes
 
 - If you encounter permission issues on Linux/macOS, try:
-	```sh
-	sudo yarn install
-	```
+  ```sh
+  sudo yarn install
+  ```
 - For more details on available scripts, see the `package.json` and Turborepo configuration.
 
 ---

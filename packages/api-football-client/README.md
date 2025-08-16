@@ -3,6 +3,7 @@
 A TypeScript client for the [API-Football v3](https://www.api-football.com/documentation-v3) REST API.
 
 ## Features
+
 - Simple authentication via API key
 - Methods for leagues, teams, fixtures, and more
 - Typed interface for usage in TypeScript projects
@@ -31,6 +32,7 @@ const fixtures = await client.getFixtures({ league: 39, season: 2024 });
 ```
 
 ## API Coverage
+
 See [API-Football v3 docs](https://www.api-football.com/documentation-v3) for all available endpoints. Extend the client as needed for your use case.
 
 ## Development

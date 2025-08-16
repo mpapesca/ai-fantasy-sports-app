@@ -23,7 +23,7 @@ import type {
   Round,
   Coverage,
   Status,
-  Timezone
+  Timezone,
 } from './types';
 
 export interface ApiFootballClientOptions {
@@ -53,17 +53,29 @@ export class ApiFootballClient {
     return response.data;
   }
 
-  async getFixtures(params: { league: number; season: number; team?: number }): Promise<{ response: Fixture[] }> {
+  async getFixtures(params: {
+    league: number;
+    season: number;
+    team?: number;
+  }): Promise<{ response: Fixture[] }> {
     const response = await this.axios.get('/fixtures', { params });
     return response.data;
   }
 
-  async getStandings(params: { league: number; season: number }): Promise<{ response: Standing[] }> {
+  async getStandings(params: {
+    league: number;
+    season: number;
+  }): Promise<{ response: Standing[] }> {
     const response = await this.axios.get('/standings', { params });
     return response.data;
   }
 
-  async getPlayers(params: { team?: number; league?: number; season?: number; player?: number }): Promise<{ response: Player[] }> {
+  async getPlayers(params: {
+    team?: number;
+    league?: number;
+    season?: number;
+    player?: number;
+  }): Promise<{ response: Player[] }> {
     const response = await this.axios.get('/players', { params });
     return response.data;
   }
@@ -93,7 +105,10 @@ export class ApiFootballClient {
     return response.data;
   }
 
-  async getTransfers(params: { player?: number; team?: number }): Promise<{ response: Transfer[] }> {
+  async getTransfers(params: {
+    player?: number;
+    team?: number;
+  }): Promise<{ response: Transfer[] }> {
     const response = await this.axios.get('/transfers', { params });
     return response.data;
   }
@@ -103,7 +118,10 @@ export class ApiFootballClient {
     return response.data;
   }
 
-  async getSidelined(params: { player?: number; team?: number }): Promise<{ response: Sidelined[] }> {
+  async getSidelined(params: {
+    player?: number;
+    team?: number;
+  }): Promise<{ response: Sidelined[] }> {
     const response = await this.axios.get('/sidelined', { params });
     return response.data;
   }
@@ -123,7 +141,12 @@ export class ApiFootballClient {
     return response.data;
   }
 
-  async getInjuries(params: { league?: number; season?: number; team?: number; player?: number }): Promise<{ response: Injury[] }> {
+  async getInjuries(params: {
+    league?: number;
+    season?: number;
+    team?: number;
+    player?: number;
+  }): Promise<{ response: Injury[] }> {
     const response = await this.axios.get('/injuries', { params });
     return response.data;
   }
@@ -133,12 +156,18 @@ export class ApiFootballClient {
     return response.data;
   }
 
-  async getTopYellowCards(params: { league: number; season: number }): Promise<{ response: Player[] }> {
+  async getTopYellowCards(params: {
+    league: number;
+    season: number;
+  }): Promise<{ response: Player[] }> {
     const response = await this.axios.get('/players/topyellowcards', { params });
     return response.data;
   }
 
-  async getTopRedCards(params: { league: number; season: number }): Promise<{ response: Player[] }> {
+  async getTopRedCards(params: {
+    league: number;
+    season: number;
+  }): Promise<{ response: Player[] }> {
     const response = await this.axios.get('/players/topredcards', { params });
     return response.data;
   }

@@ -14,13 +14,7 @@ export default defineConfig({
         branches: 90,
         statements: 90,
       },
-      exclude: [
-        'src/main.tsx',
-        'src/main.ts',
-        'src/index.ts',
-        'vite.config.ts',
-        'dist/**',
-      ],
+      exclude: ['src/main.tsx', 'src/main.ts', 'src/index.ts', 'vite.config.ts', 'dist/**'],
     },
     setupFiles: [], // Add setup files here if needed (e.g. for global mocks)
     include: ['__tests__/**/*.test.{ts,tsx}'],

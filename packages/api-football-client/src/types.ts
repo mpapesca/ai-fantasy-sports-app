@@ -86,7 +86,6 @@ export interface Player {
   statistics: Array<Record<string, any>>;
 }
 
-
 // Enums
 export enum LeagueType {
   League = 'League',
@@ -122,19 +121,21 @@ export const API_BASE_URL = 'https://v3.football.api-sports.io';
 export interface Standing {
   league: League['league'];
   season: number;
-  standings: Array<Array<{
-    rank: number;
-    team: Team['team'];
-    points: number;
-    goalsDiff: number;
-    group?: string;
-    form?: string;
-    status?: string;
-    description?: string;
-    all: Record<string, number>;
-    home: Record<string, number>;
-    away: Record<string, number>;
-  }>>;
+  standings: Array<
+    Array<{
+      rank: number;
+      team: Team['team'];
+      points: number;
+      goalsDiff: number;
+      group?: string;
+      form?: string;
+      status?: string;
+      description?: string;
+      all: Record<string, number>;
+      home: Record<string, number>;
+      away: Record<string, number>;
+    }>
+  >;
 }
 
 // Coach

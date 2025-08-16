@@ -9,7 +9,7 @@ export default defineConfig({
       entry: path.resolve(__dirname, 'src/index.ts'),
       name: 'Components',
       formats: ['es', 'cjs'],
-      fileName: (format) => format === 'es' ? 'index.mjs' : 'index.js',
+      fileName: (format) => (format === 'es' ? 'index.mjs' : 'index.js'),
     },
     rollupOptions: {
       external: ['react', 'react-dom'],

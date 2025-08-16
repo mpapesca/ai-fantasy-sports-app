@@ -10,12 +10,8 @@ export default defineConfig({
         branches: 90,
         statements: 90,
       },
-      exclude: [
-        'src/main.ts',
-        'src/index.ts',
-        'vitest.config.ts',
-        'dist/**',
-      ],
+      exclude: ['src/main.ts', 'src/index.ts', 'vitest.config.ts', 'dist/**', '**/types.ts'],
     },
+    setupFiles: ['setupTests.ts'],
   },
 });

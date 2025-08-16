@@ -1,0 +1,86 @@
+{
+  "info": {
+    "name": "AI Fantasy Sports Backend API",
+    "description": "Test collection for backend endpoints",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get Leagues",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/leagues",
+          "host": ["{{baseUrl}}"],
+          "path": ["leagues"]
+        }
+      }
+    },
+    {
+      "name": "Get Teams",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/teams?league=39&season=2024",
+          "host": ["{{baseUrl}}"],
+          "path": ["teams"],
+          "query": [
+            { "key": "league", "value": "39" },
+            { "key": "season", "value": "2024" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Players",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/players?team=33&season=2024",
+          "host": ["{{baseUrl}}"],
+          "path": ["players"],
+          "query": [
+            { "key": "team", "value": "33" },
+            { "key": "season", "value": "2024" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Fixtures",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/fixtures?league=39&season=2024",
+          "host": ["{{baseUrl}}"],
+          "path": ["fixtures"],
+          "query": [
+            { "key": "league", "value": "39" },
+            { "key": "season", "value": "2024" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Standings",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/standings?league=39&season=2024",
+          "host": ["{{baseUrl}}"],
+          "path": ["standings"],
+          "query": [
+            { "key": "league", "value": "39" },
+            { "key": "season", "value": "2024" }
+          ]
+        }
+      }
+    }
+  ],
+  "variable": [{ "key": "baseUrl", "value": "http://localhost:3001" }]
+}

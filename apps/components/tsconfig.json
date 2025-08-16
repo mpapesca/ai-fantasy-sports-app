@@ -10,7 +10,7 @@
     "moduleResolution": "Node",
     "skipLibCheck": true,
     "strict": true,
-    "baseUrl": "./",
+    "baseUrl": "./"
   },
-  "include": ["src"]
+  "include": ["src", "__tests__"]
 }
